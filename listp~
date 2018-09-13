@@ -1,0 +1,10 @@
+(defun latp(a)
+  (cond 
+   ((null a) t)
+   ((atom (car a)) (latp (cdr a)))
+   (t nil)
+  )
+)
+
+(latp '(1 2 3))
+
